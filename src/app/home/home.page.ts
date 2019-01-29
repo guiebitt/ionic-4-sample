@@ -1,3 +1,4 @@
+import { Events } from '@ionic/angular';
 import { Component } from '@angular/core';
 
 @Component({
@@ -7,4 +8,19 @@ import { Component } from '@angular/core';
 })
 export class HomePage {
 
+  username = 'Guilherme Eduardo Bittencourt';
+
+  constructor(private events: Events) { }
+
+  changePtLang() {
+    this.events.publish('CHANGE_LANG', 'pt-br');
+  }
+
+  changeEnLang() {
+    this.events.publish('CHANGE_LANG', 'en');
+  }
+
+  changeEsLang() {
+    this.events.publish('CHANGE_LANG', 'es');
+  }
 }
