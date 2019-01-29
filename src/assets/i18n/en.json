@@ -1,3 +1,3 @@
 {
-    "WelcomeUser": "Welcome <strong>{{value}}</strong> to my Ionic 4 application!"
+    "WelcomeUser": "Welcome <strong>{{value}}</strong> to Ionic 4 sample application!"
 }

@@ -5,7 +5,11 @@ export class AppPage {
     return browser.get('/');
   }
 
-  getParagraphText() {
-    return element(by.deepCss('app-root ion-content')).getText();
+  getTitle() {
+    return element(by.deepCss('ion-title')).getText();
+  }
+
+  getButton(text: string) {
+    return element(by.cssContainingText('.button', text));
   }
 }
